@@ -4,7 +4,9 @@
   "description": "Simulate a society",
   "main": "society-simulator.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "script-name": "babel-node script.js",
+    "test": "npm run build && ./node_modules/.bin/mocha --compilers js:babel-core/register",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,13 @@
   },
   "homepage": "https://github.com/NathanielScottStevens/society-simulator#readme",
   "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
     "chai": "^3.5.0",
-    "mocha": "^3.0.2",
-    "qunit": "^0.9.1"
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "chance": "^1.0.4"
   }
 }

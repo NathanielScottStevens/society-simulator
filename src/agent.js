@@ -1,7 +1,7 @@
 'use strict'
 var chance = require('chance').Chance();
 
-class Agent {
+export default class Agent {
     constructor(lastName, firstName, gender, age){
         this.gender = gender || chance.gender();
         this.firstName = firstName || chance.first({ gender: this.gender });
@@ -22,5 +22,3 @@ class Agent {
         });
     }
 }
-
-module.exports = Agent;
