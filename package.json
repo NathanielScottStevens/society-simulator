@@ -1,0 +1,24 @@
+{
+  "name": "society-simulator",
+  "version": "1.0.0",
+  "description": "Simulate a society",
+  "main": "society-simulator.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanielScottStevens/societySimulator.git"
+  },
+  "author": "Nathaniel Stevens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NathanielScottStevens/society-simulator/issues"
+  },
+  "homepage": "https://github.com/NathanielScottStevens/society-simulator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "qunit": "^0.9.1"
+  }
+}
