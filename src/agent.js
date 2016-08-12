@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var chance = require('chance').Chance();
 
 export default class Agent {

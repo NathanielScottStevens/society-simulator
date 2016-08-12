@@ -10,8 +10,12 @@ export default class World {
     }
 
     update(){
+        this._updateAgents();
+    }
+
+    _updateAgents(){
         this.agents.forEach((agent) => {
             agent.update();
-        })
+        });
     }
 }
