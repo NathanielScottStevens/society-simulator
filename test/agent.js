@@ -1,6 +1,4 @@
-'use strict'
-//let expect = require("chai").expect;
-//let Agent = require("../src/agent");
+'use strict';
 import { expect } from 'chai';
 import Agent from '../src/agent';
 
